@@ -1,0 +1,96 @@
+/* ── Design Tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --bg-primary: #0f0f1a;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #1f1f38;
+  --bg-input: #12121f;
+  --border: #2a2a4a;
+  --border-focus: #6c63ff;
+
+  --text-primary: #e8e8f0;
+  --text-secondary: #9898b8;
+  --text-muted: #5a5a7a;
+
+  --accent: #6c63ff;
+  --accent-hover: #7c73ff;
+  --accent-light: rgba(108, 99, 255, 0.15);
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --danger-light: rgba(239, 68, 68, 0.15);
+
+  /* Category colors */
+  --cat-food: #f472b6;
+  --cat-transport: #38bdf8;
+  --cat-bills: #f59e0b;
+  --cat-entertainment: #a78bfa;
+  --cat-other: #6ee7b7;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --transition: 150ms ease;
+
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Typography ────────────────────────────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ── Utilities ─────────────────────────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

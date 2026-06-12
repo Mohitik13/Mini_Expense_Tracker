@@ -1,0 +1,120 @@
+.table-wrapper {
+  padding: 0;
+  overflow: hidden;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.etable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.etable thead tr {
+  background: var(--bg-input);
+}
+
+.etable th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.etable__row {
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+
+.etable__row:last-child {
+  border-bottom: none;
+}
+
+.etable__row:hover {
+  background: var(--bg-card-hover);
+}
+
+.etable td {
+  padding: 13px 16px;
+  vertical-align: middle;
+}
+
+.etable__date {
+  color: var(--text-secondary);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.etable__cat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: color-mix(in srgb, var(--cat) 18%, transparent);
+  color: var(--cat);
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.etable__amount {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.etable__note {
+  color: var(--text-secondary);
+  font-size: 13px;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.etable__no-note {
+  color: var(--text-muted);
+}
+
+.etable__actions-col {
+  width: 1%;
+}
+
+.etable__actions {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* Empty state */
+.table-empty {
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.table-empty__icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.table-empty__msg {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.table-empty__sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
