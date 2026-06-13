@@ -1,4 +1,4 @@
-const BASE = "/api";
+const BASE = "https://expense-tracker-backend-zl08.onrender.com/api";
 
 async function handleResponse(res) {
   const data = await res.json();
